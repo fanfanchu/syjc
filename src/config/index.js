@@ -29,9 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://w5x8mu2a9943r.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            'https://apiapi.syjccloud.com/api/v1'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -49,7 +47,7 @@ export const config  = {
 
     // 是否启用中间件代理API请求
     // 设置为true时，所有API请求将通过中间件转发
-    API_MIDDLEWARE_ENABLED: true,
+    API_MIDDLEWARE_ENABLED: false,
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
@@ -66,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
-        siteDescription: 'EZ UI',
+        siteName: '瞬云',
+        siteDescription: '畅游网络新体验',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} 瞬云. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
@@ -205,7 +203,7 @@ export const config  = {
         // 商店弹窗配置
         popup: {
             // 是否启用弹窗
-            enabled: true,
+            enabled: false,
 
             // 弹窗标题
             title: "用户须知",
@@ -222,7 +220,7 @@ export const config  = {
     },
     ORDER_CONFIG: {
         // 下单前二次确认
-        confirmOrder: true,
+        confirmOrder: false,
         // 下单前二次确认内容
         confirmOrderContent: "<p><strong style='color: red'>无法提供相关教程和使用说明。</strong></p><p><strong style='color: red'>不会使用请勿购买，没有退款政策</strong></p>",
 
@@ -233,7 +231,7 @@ export const config  = {
         showUserEmail: false,
 
         // 是否为导入订阅按钮添加高光效果和填充底色 (true=添加效果, false=不添加效果)
-        importButtonHighlightBtnbgcolor: false,
+        importButtonHighlightBtnbgcolor: true,
 
         // ===============================
 
@@ -272,38 +270,35 @@ export const config  = {
         showDownloadCard: true,
 
         // 平台显示控制 (true=显示, false=隐藏)
-        showIOS: true,
+        showIOS: false,
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
+        showLinux: false,
+        showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
-            linux: 'https://github.com/xxx/releases/latest',
-            openwrt: 'https://github.com/xxx/releases/latest'
+            android: 'http://38.147.163.207:5212/f/d/5XTz/ShunCloud-1.0.0-android-arm64.apk',
+            macos: 'http://38.147.163.207:5212/f/d/nVsp/ShunCloud-1.0.0-macos-universal.dmg',
+            windows: 'http://38.147.163.207:5212/f/d/4DuP/ShunCloud-1.0.0-windows.exe'
         },
 
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
 
         // iOS平台
         showShadowrocket: true,
-        showSurge: true,
-        showStash: true,
-        showQuantumultX: true,
-        showHiddifyIOS: true,
-        showSingboxIOS: true,
-        showLoon: true,
+        showSurge: false,
+        showStash: false,
+        showQuantumultX: false,
+        showHiddifyIOS: false,
+        showSingboxIOS: false,
+        showLoon: false,
 
         // Android平台客户端
         showFlClashAndroid: true,
         showV2rayNG: true,
-        showClashAndroid: true,
+        showClashAndroid: false,
         showSurfboard: true,
         showClashMetaAndroid: true,
         showNekobox: true,
@@ -313,7 +308,7 @@ export const config  = {
         // Windows平台客户端
         showFlClashWindows: true,
         showClashVergeWindows: true,
-        showClashWindows: true,
+        showClashWindows: false,
         showNekoray: true,
         showSingboxWindows: true,
         showHiddifyWindows: true,
@@ -321,11 +316,11 @@ export const config  = {
         // MacOS平台客户端
         showFlClashMac: true,
         showClashVergeMac: true,
-        showClashX: true,
+        showClashX: false,
         showClashMetaX: true,
-        showSurgeMac: true,
-        showStashMac: true,
-        showQuantumultXMac: true,
+        showSurgeMac: false,
+        showStashMac: false,
+        showQuantumultXMac: false,
         showSingboxMac: true,
         showHiddifyMac: true
     },
@@ -462,7 +457,7 @@ export const config  = {
     // 浏览器访问限制配置
     BROWSER_RESTRICT_CONFIG: {
         // 是否启用浏览器限制功能
-        enabled: true,
+        enabled: false,
 
         // 各浏览器是否被限制访问（true=限制访问，false=允许访问）
         restrictBrowsers: {
@@ -535,7 +530,7 @@ export const config  = {
     // 客服系统配置
     CUSTOMER_SERVICE_CONFIG: {
         // 是否启用客服系统
-        enabled: false,
+        enabled: true,
 
         // 客服系统类型: 'crisp' 或 'other'
         // 注意：当客服类型为crisp时，系统会自动向Crisp传递用户数据
@@ -543,7 +538,7 @@ export const config  = {
         type: 'crisp',
 
         // 客服系统JS代码，请将您的客服系统提供的嵌入代码粘贴在这里
-        customHtml: '',
+        customHtml: '<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6123424a-2ef4-42f5-9316-327e7d9622b2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>',
 
         // 客服系统嵌入模式: 'popup'=弹出式页面, 'embed'=嵌入到每个页面
         // 'popup'模式: 点击客服图标会跳转到单独的客服页面
