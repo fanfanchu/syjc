@@ -279,9 +279,9 @@ export const config  = {
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            android: 'http://38.207.133.250:5212/f/XluV/ShunCloud-1.0.0-android-x86_64.apk',
-            macos: 'http://38.207.133.250:5212/f/voF3/ShunCloud-1.0.0-macos-universal.dmg',
-            windows: 'http://38.207.133.250:5212/f/3Mhk/ShunCloud-1.0.0-windows.exe'
+            android: 'https://wwbbz.lanzn.com/iew093t3szla',
+            macos: 'https://wwbbz.lanzn.com/izDRW3t3t58d',
+            windows: 'https://wwbbz.lanzn.com/isHk93t3t0id'
         },
 
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
